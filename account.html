@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+     <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Tailwind cdn -->
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="text-center mt-10">
+        <h1 class="uppercase text-4xl">Welcome to <span class="text-purple-900">Account</span></h1>
+    </header>
+    <main class="mx-auto w-3/4">
+        <section class="mx-auto mt-8">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-yellow-200 p-5">
+                    <h1 class="uppercase text-2xl text-indigo-900 block">deposit</h1>
+                    <h2 class="uppercase text-5xl text-indigo-900  mt-5">$ <span id="addDeposit">00</span></h2>
+                </div>
+                <div class="bg-blue-200 p-5">
+                    <h1 class="uppercase text-2xl text-indigo-900 block">withdraw</h1>
+                    <h2 class="uppercase text-5xl text-indigo-900  mt-5">$ <span id="subDeposit">00</span></h2>
+                </div>
+                <div class="bg-green-200 p-5">
+                    <h1 class="uppercase text-2xl text-indigo-900 block">Balance</h1>
+                    <h2 class="uppercase text-5xl text-indigo-900 mt-5">$ <span id="addBalance">1000</span></h2>
+                </div>
+              </div>
+        </section>
+
+    <section class="mx-auto mt-8">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-yellow-100 p-4">
+            <input id="deposit-value" class="border-4 border-gray-300 w-3/4 mt-4 mb-2" type="text" placeholder="Enter Your Money"><br>
+            <button id="debositSubmit" class="border-2 px-4 py-1 rounded mt-2 bg-yellow-400 font-bold uppercase">deposit</button>
+            </div>
+            <div class="bg-yellow-100 p-4">
+            <input id="withdraw-value" class="border-4 border-gray-300 w-3/4 mt-4 mb-2" type="text" placeholder="Enter Your Money"><br>
+            <button id="withdrawSubmit" class="border-2 px-4 py-1 rounded mt-2 bg-yellow-400 font-bold uppercase">WITHDRAW</button>
+            </div>
+            
+
+        </div>
+    </section>
+    </main>
+    
+    <script src="js/account.js"></script>
+</body>
+</html>
